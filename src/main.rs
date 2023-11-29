@@ -1,6 +1,11 @@
 
 use actix_web::{App, HttpServer};
 
+ 
+mod shared {
+    pub mod templates;
+} 
+
 mod modules {
     pub mod index;
     pub mod blog;
