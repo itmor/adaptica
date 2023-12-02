@@ -1,12 +1,16 @@
 
 use actix_web::{Responder, HttpResponse};
-use askama::Template; 
-use crate::modules::index::views::IndexTemplate;
+use sailfish::TemplateOnce;
+
+use crate::{modules::index::views::IndexTemplate, shared::templates::BaseTemplate};
 
 pub async fn load() -> impl Responder {
-    let template = IndexTemplate {};
+    let content = IndexTemplate {}.render_once().unwrap();
+    let base_template = BaseTemplate { 
+        content: content,
+    };
 
-    match template.render() {
+    match base_template.render_once() {
         Ok(rendered) => HttpResponse::Ok().content_type("text/html").body(rendered),
         Err(_) => HttpResponse::InternalServerError().into(),
     }

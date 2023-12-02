@@ -1,5 +1,6 @@
-use askama::Template;
+use sailfish::TemplateOnce;
 
-#[derive(Template)]
-#[template(path = "modules/index/views/index.html")]
+
+#[derive(TemplateOnce)]
+#[template(path = "modules/index/views/index.stpl")]
 pub struct IndexTemplate;
