@@ -4,6 +4,7 @@ use sailfish::TemplateOnce;
 #[template(path = "shared/templates/base.stpl")]
 pub struct BaseTemplate {
    pub content: String,
+   pub css_paths: Vec<String>
 }
 
 #[derive(TemplateOnce)]

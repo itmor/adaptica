@@ -8,6 +8,11 @@ pub async fn load() -> impl Responder {
     let content = IndexTemplate {}.render_once().unwrap();
     let base_template = BaseTemplate { 
         content: content,
+        css_paths: vec![
+            "/styles/base.css".to_string(), 
+            "/index/styles/index.css".to_string(), 
+        ],
+        
     };
 
     match base_template.render_once() {
