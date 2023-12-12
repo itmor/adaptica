@@ -1,3 +1,6 @@
-<div>
-    Это хедер
+<div class="header">
+    <a class="header__logo" href="/">Adaptica</a>
+    <div class="header__search">
+        <input class="header__search-input" type="search" placeholder="поиск">
+    </div>
 </div>

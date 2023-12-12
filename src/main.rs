@@ -1,6 +1,5 @@
 use actix_files as fs;
 use actix_web::{App, HttpServer};
-
  
 mod shared {
     pub mod templates;
