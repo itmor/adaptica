@@ -3,4 +3,8 @@
     <div class="header__search">
         <input class="header__search-input" type="search" placeholder="поиск">
     </div>
+    <div class="ui__add-button">
+        <div class="ui__add-button-circle"></div>
+        <div class="ui__add-button-plus"></div>
+      </div>
 </div>

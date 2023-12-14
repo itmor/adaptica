@@ -5,7 +5,7 @@ run in root
 enter you server host and port in config, enter actix server
 `proxy: "127.0.0.2:8080" `
 
-run cargo watch -s ./watch.sh
+run `cargo watch -s ./watch.sh`
 
 open http://localhost:3003/
 

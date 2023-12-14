@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" /> 
+    <meta charset="UTF-8" />
     <% for path in css_paths { %>
-      <link rel="stylesheet" href="<%= path %>">
+    <link rel="stylesheet" href="<%= path %>" />
     <% } %>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <% include!("header.stpl"); %> 
-    <%- content %>
-    <% include!("footer.stpl"); %> 
+    <% include!("header.stpl"); %> <%- content %> <% include!("footer.stpl"); %>
   </body>
 </html>

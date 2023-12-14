@@ -1,3 +1,4 @@
 /target
 .vscode
 bs-config.js
+node_modules
