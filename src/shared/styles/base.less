@@ -8,10 +8,11 @@ html body {
 }
 
 .footer {
-  margin: 0 auto 25px auto;
-  width: 50%;
-  display: flex; 
-
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  
   .footer__link + .footer__link {
     margin-left: 25px;
   }
@@ -19,9 +20,8 @@ html body {
   .footer__link {
     text-decoration: none;
     color: #000;
-
   }
-  
+
   @media @mobile, @tablet {
     width: calc(100% - 50px);
   }
@@ -103,7 +103,6 @@ html body {
     box-sizing: border-box;
   }
 }
-
 
 .ui-page {
   width: 81%;
