@@ -1,3 +1,4 @@
-<div>
-    Это футер
+<div class="footer">
+  <a class="footer__link" href="#">Сервисы</a>
+  <a class="footer__link" href="#">О сайте</a>
 </div>

@@ -7,13 +7,40 @@ html body {
   margin: 0;
 }
 
+.footer {
+  margin: 0 auto 25px auto;
+  width: 50%;
+  display: flex; 
+
+  .footer__link + .footer__link {
+    margin-left: 25px;
+  }
+
+  .footer__link {
+    text-decoration: none;
+    color: #000;
+
+  }
+  
+  @media @mobile, @tablet {
+    width: calc(100% - 50px);
+  }
+}
+
 .header {
   display: grid;
   grid-template-columns: 1fr 1fr auto;
   margin: 0 auto;
   margin-bottom: 16px;
   margin-top: 16px;
-  width: 57%;
+  align-items: center;
+  width: 50%;
+  column-gap: 25px;
+
+  @media @mobile, @tablet {
+    width: calc(100% - 50px);
+    margin: 16px 25px;
+  }
 
   .header__logo {
     color: black;
@@ -33,6 +60,7 @@ html body {
       padding: 0 20px;
     }
   }
+
   .header__search {
     .header__search-input:focus {
       outline: none;

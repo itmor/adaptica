@@ -2,10 +2,10 @@
 use actix_web::{Responder, HttpResponse};
 use sailfish::TemplateOnce;
 
-use crate::{modules::index::views::IndexTemplate, shared::templates::BaseTemplate};
+use crate::{modules::blog::views::AddPostTemplate, shared::templates::BaseTemplate};
 
-pub async fn load() -> impl Responder {
-    let content = IndexTemplate {}.render_once().unwrap();
+pub async fn add_post() -> impl Responder {
+    let content = AddPostTemplate {}.render_once().unwrap();
     let base_template = BaseTemplate { 
         content: content,
         css_paths: vec![

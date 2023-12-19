@@ -1,9 +1,9 @@
 use actix_web::web;
-use super::actions::load_posts_action;
+use super::actions::add_post_action;
 
 pub fn init(cfg: &mut web::ServiceConfig) {
     cfg.service(
         web::scope("/blog")
-            .route("/posts", web::get().to(load_posts_action::load_posts)),
+            .route("/add_post", web::get().to(add_post_action::add_post)),
     );
 }

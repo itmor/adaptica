@@ -1,10 +1,10 @@
 <div class="header">
-    <a class="header__logo" href="/">Adaptica</a>
-    <div class="header__search">
-        <input class="header__search-input" type="search" placeholder="поиск">
-    </div>
-    <div class="ui__add-button">
-        <div class="ui__add-button-circle"></div>
-        <div class="ui__add-button-plus"></div>
-      </div>
+  <a class="header__logo" href="/">Adaptica</a>
+  <div class="header__search">
+    <input class="header__search-input" type="search" placeholder="поиск" />
+  </div>
+  <div class="ui__add-button" onclick="window.location.href='/blog/add_post';">
+    <div class="ui__add-button-circle"></div>
+    <div class="ui__add-button-plus"></div>
+  </div>
 </div>

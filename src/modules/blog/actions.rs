@@ -1,1 +1,1 @@
-pub mod load_posts_action;
+pub mod add_post_action;
