@@ -1,0 +1,83 @@
+@desktop: ~"(min-width: 1280px)";
+@laptop: ~"(min-width: 960px) and (max-width: 1279.98px)";
+@tablet: ~"(min-width: 600px) and (max-width: 959.98px)";
+@mobile: ~"(max-width: 599.98px)";
+
+.add-post {
+  .add-post__sample-image {
+    min-width: 410px;
+    margin: 0 auto;
+    cursor: pointer;
+    width: fit-content;
+    padding: 1px;
+
+    @media @mobile, @tablet {
+      min-width: 100%;
+    }
+
+    &:hover {
+      padding: 0;
+      border: 1px solid #549aff;
+    }
+  }
+
+  @mukta-font: "Mukta", sans-serif;
+
+  .add-post__title-input {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    border: none;
+    outline: none;
+    background: none;
+    font-family: @mukta-font;
+    font-size: medium;
+    font-size: 20px;
+
+    &::placeholder {
+      font-family: @mukta-font;
+    }
+
+    &:focus,
+    &:not(:placeholder-shown) {
+      color: black;
+    }
+
+    &::placeholder {
+      color: black;
+    }
+  }
+
+  .add-post__text-input {
+    font-family: @mukta-font;
+    font-size: medium;
+    font-size: 16px;
+    width: 100%;
+    display: flex;
+    border: none;
+    overflow: hidden;
+    resize: vertical;
+    height: auto;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .add-post__actions-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+
+    .add-post__submit-button {
+      margin-top: 14px;
+      background: transparent;
+      border: 1px solid #646161;
+      border-radius: 19px;
+      font-size: 15px;
+      padding: 5px 31px;
+      color: #646161;
+      cursor: pointer;
+    }
+  }
+}

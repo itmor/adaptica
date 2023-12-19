@@ -10,8 +10,7 @@ pub async fn add_post() -> impl Responder {
         content: content,
         css_paths: vec![
             "/styles/base.css".to_string(), 
-            "/index/styles/index.css".to_string(), 
-            "/styles/content_card.css".to_string(), 
+            "/blog/styles/add_post.css".to_string(),  
         ],
         
     };

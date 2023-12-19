@@ -10,7 +10,6 @@ pub async fn load() -> impl Responder {
         content: content,
         css_paths: vec![
             "/styles/base.css".to_string(), 
-            "/index/styles/index.css".to_string(), 
             "/styles/content_card.css".to_string(), 
         ],
         
