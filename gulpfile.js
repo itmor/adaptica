@@ -11,7 +11,7 @@ const axios = require('axios');
 let isBrowserSyncRunning = false;
 
 const reloadBrowserSync = () => {
-  axios.post("http://localhost:3001/__browser_sync__?method=reload")
+  axios.post("http://localhost:3004/__browser_sync__?method=reload")
     .then(() => {
       isBrowserSyncRunning = true;
       console.log('Reload page');

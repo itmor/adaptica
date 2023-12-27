@@ -1,0 +1,13 @@
+<div class="ui-page">
+  <div class="login-form">
+    <div class="login-form__panel">
+      <div class="login-form__row">
+        <input class="login-form__input" type="text" placeholder="логин" />
+      </div>
+      <div class="login-form__row">
+        <input class="login-form__input" type="password" placeholder="пароль" />
+      </div>
+      <button class="login-form__submit-button">Вход</button>
+    </div>
+  </div>
+</div>

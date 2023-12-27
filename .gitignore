@@ -1,4 +1,4 @@
 /target
-.vscode
-bs-config.js
+.vscode 
 node_modules
+.idea
